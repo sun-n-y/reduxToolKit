@@ -112,11 +112,14 @@ export const store = configureStore({
 
 #### Redux DevTools
 
-- extension
+- extension for browser is needed
+- for the code, its built in with redux toolkit
 
-#### Access store value
+#### Access store value in a component
 
 - create components/Navbar.js
+- with useSelector()
+- can access our entire store right away
 
 ```js
 import { CartIcon } from '../icons';
