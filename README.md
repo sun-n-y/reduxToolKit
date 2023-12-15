@@ -148,6 +148,7 @@ export default Navbar;
 #### Hero Icons
 
 - [Hero Icons](https://heroicons.com/)
+- giant icon if styles are not applied default
 
 ```css
 nav svg {
