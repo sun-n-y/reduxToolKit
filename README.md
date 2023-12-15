@@ -26,11 +26,12 @@ consists of few libraries
 
 #### react-redux
 
-redux can be used to any frontend framework, so in order to connect our app to redux we a use a package called react-redux
+- redux can be used with any frontend framework, so in order to connect our app to redux we a use a package called react-redux
 
 #### Setup Store
 
-- create store.js
+- create store.js in src
+  - entire state for application
 
 ```js
 import { configureStore } from '@reduxjs/toolkit';
@@ -43,6 +44,9 @@ export const store = configureStore({
 #### Setup Provider
 
 - index.js
+  - import store from store js
+  - import Provider from react-redux
+  - wrap app to connect redux to app
 
 ```js
 import React from 'react';
@@ -66,7 +70,8 @@ ReactDOM.render(
 #### Setup Cart Slice
 
 - application feature
-- create features folder/cart
+  - ex. one for cart functionality and one for modal = 2 slices
+- create features folder/cart in src
 - create cartSlice.js
 
 ```js
@@ -89,7 +94,10 @@ console.log(cartSlice);
 export default cartSlice.reducer;
 ```
 
-- store.js
+- in store.js
+  - import cart reducer, a function that modifies the state of the cart slice
+  - in reducer key name is needed, can be w/e you want
+  - later will be accessed to control cart state
 
 ```js
 import { configureStore } from '@reduxjs/toolkit';
