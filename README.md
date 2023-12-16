@@ -260,8 +260,17 @@ export default CartItem;
 
 #### First Reducer
 
+- how to setup up functionality in redux toolkit
+  - before we needed action, dispatch etc
+  - with redux its much simpler
 - cartSlice.js
+- add reducer property in the cart slice
+- not return is needed for the new state
+- we can modify / mutate state directly
 - Immer library
+- does heavy lifting behind the scenes
+- no manual setup of action is needed
+- its right away in the cart slice object
 
 ```js
 const cartSlice = createSlice({
