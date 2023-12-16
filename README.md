@@ -268,9 +268,9 @@ export default CartItem;
 - not return is needed for the new state
 - we can modify / mutate state directly
 - Immer library
-- does heavy lifting behind the scenes
-- no manual setup of action is needed
-- its right away in the cart slice object
+  - does heavy lifting behind the scenes
+  - no manual setup of action is needed
+  - its right away in the cart slice object
 
 ```js
 const cartSlice = createSlice({
@@ -324,6 +324,9 @@ export default CartContainer;
 #### Remove, Increase, Decrease
 
 - cartSlice.js
+- payload
+  - w/e we pass in can be accessed here
+  - ex.id of an id
 
 ```js
 import { createSlice } from '@reduxjs/toolkit';
