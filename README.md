@@ -613,6 +613,10 @@ export default Modal;
 - action type
 - callback function
 - lifecycle actions
+  - pending
+  - fulfilled
+    - two parameters, action will contain result
+  - rejected
 
 ```js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
